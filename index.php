@@ -5,7 +5,7 @@
     <title>Indori Food Hipster</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="1464103301_Lollipop.svg">
   </head>
 
@@ -87,7 +87,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.0/list.min.js'></script>
 
 
-        <script src="js/index.js"></script>
+        <script src="index.js"></script>
 
     
     
