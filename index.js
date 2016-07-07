@@ -1,6 +1,26 @@
 /*
     * LOVELY THINGS
     */
+var list = document.getElementById('list').querySelectorAll('li');
+
+       Array.prototype.slice.call(list).forEach(function(listItem){
+          listItem.addEventListener('click', function(e){
+          document.getElementById('overlays').style="display:block";  
+          var y = this.id;
+          var hdr = document.getElementsByClassName('name');
+          var phn = document.getElementsByClassName('phne');
+          var adr = document.getElementsByClassName('adres');
+          var bdg = document.getElementsByClassName('budget');
+          var crd = document.getElementsByClassName('credit');
+          var atr = document.getElementsByClassName('host');
+          document.getElementById("ovrhdr").innerHTML = hdr[y].innerHTML;
+          document.getElementById("ovrphn").innerHTML = phn[y].innerHTML;
+          document.getElementById("ovradr").innerHTML = adr[y].innerHTML;
+          document.getElementById("ovrbdg").innerHTML = bdg[y].innerHTML;
+          document.getElementById("ovrcrd").innerHTML = crd[y].innerHTML;
+          document.getElementById("ovratr").innerHTML = atr[y].innerHTML;
+          });
+        });
 
               
 
