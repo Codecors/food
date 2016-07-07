@@ -11,6 +11,24 @@ var options = {
 
 var featureList = new List('externship-sites', options, values);
 
+var values = [ {
+  name: "Manchurian",
+  phone: "0731 4282626",
+  category: "Desi",
+  description: "Riders Republic Cafe -&gt; ADDRESS : Vijay Nagar › 81&#44; Near RR Tyres&#44; Sayaji Club Road&#44; Bhamori&#44; Vijay Nagar&#44; Indore<br>700 for two people (approx.)<br> Credit Cards : accepted" ,
+  thumb: 4.5
+}];
+
+
+featureList.add({
+  name: "Manchurian00" ,
+  phone: "0731 4282621" ,
+  category: "breakfast" ,
+  description: "Ciders Republic Cafe -&gt; ADDRESS : Vijay Nagar › 81&#44; Near RR Tyres&#44; Sayaji Club Road&#44; Bhamori&#44; Vijay Nagar&#44; Indore<br>700 for two people (approx.)<br> Credit Cards : accepted" ,
+  thumb: 3.5
+});
+
+
 $('.search').on('keyup', function(event) { // Fired on 'keyup' event
 
   if($('.list').children().length === 0) { // Checking if list is empty
