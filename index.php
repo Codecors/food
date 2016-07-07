@@ -32,10 +32,7 @@
 <body onload="load()">
 <script type="text/javascript">
 function load() {
-$(window).load(function(){
-            $("#footer").hide();
-        });
-}
+document.getElementById('footer').style="display:none;";
 </script>
   <div class="titlebar" style="background: #FFEC40;">
     <span class="btn-left" onclick="goBack()"> &larr;</span>
