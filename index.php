@@ -33,6 +33,7 @@
 <script type="text/javascript">
 function load() {
 document.getElementById('footer').style="display:none;";
+}
 </script>
   <div class="titlebar" style="background: #FFEC40;">
     <span class="btn-left" onclick="goBack()"> &larr;</span>
