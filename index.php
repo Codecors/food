@@ -29,8 +29,14 @@
 }
 </style>
 
-<body>
-
+<body onload="load()">
+<script type="text/javascript">
+function load() {
+$(window).load(function(){
+            $("#footer").hide();
+        });
+}
+</script>
   <div class="titlebar" style="background: #FFEC40;">
     <span class="btn-left" onclick="goBack()"> &larr;</span>
     <div class="header" style="font-variant: small-caps;font-weight: 800;">IndoriGram</div>
@@ -41,8 +47,8 @@
   </div>
 
   <div id="site-container">
-      <footer id="footer" style="position: fixed;bottom: 0px;background: #00BCD4;width: 98%;height: auto;padding: 10px;">
-        <div id="log">Loading Please don't close</div>
+      <footer id="footer" style="position: fixed;bottom: 0px;background: #00BCD4;width: 98%;height: auto;padding: 10px;z-index:10;">
+        <div id="log">Loading Please don't close. Website is loading...</div>
         <span style="transform: rotate(45deg);position: relative;right: 0px;float: right;margin-right: 20px;top: 0px;font-size: 34px;z-index: 1000;" onclick="document.getElementById('footer').style='display:none;';">+</span>
       </footer>
     <div id="overlays" class="w3-animate-bottom" style="display:none;">

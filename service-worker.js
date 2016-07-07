@@ -2,7 +2,7 @@ var dataCacheName = "food",
   cacheName = "indorigram",
   filesToCache = ["/", "index.php", "index.js", "style.css", "map.php", "css/style.css", "map.js", "https://fonts.googleapis.com/icon?family=Material+Icons", "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js", "https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.0/list.min.js"];
 self.addEventListener("install", function(e) {
-	document.getElementById('log').innerHTML = "Updating The Data";
+	
   console.log("[ServiceWorker] Install"), e.waitUntil(caches.open(cacheName).then(function(e) {
     return console.log("[ServiceWorker] Caching App Shell"), e.addAll(filesToCache)
   }))
