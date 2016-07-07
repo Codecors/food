@@ -30,6 +30,7 @@
 </style>
 
 <body>
+
   <div class="titlebar" style="background: #FFEC40;">
     <span class="btn-left" onclick="goBack()"> &larr;</span>
     <div class="header" style="font-variant: small-caps;font-weight: 800;">IndoriGram</div>
@@ -40,6 +41,10 @@
   </div>
 
   <div id="site-container">
+      <footer id="footer" style="position: fixed;bottom: 0px;background: #00BCD4;width: 98%;height: auto;padding: 10px;">
+        <div id="log">Loading Please don't close</div>
+        <span style="transform: rotate(45deg);position: relative;right: 0px;float: right;margin-right: 20px;top: 0px;font-size: 34px;z-index: 1000;" onclick="document.getElementById('footer').style='display:none;';">+</span>
+      </footer>
     <div id="overlays" class="w3-animate-bottom" style="display:none;">
     <span onclick="document.getElementById('overlays').style.display='none'" class="qcls" style="right:10px;color:white;">+</span>
     <div class="imgovr" style="background: #00BCD4;width: 100%;height: 200px;">&nbsp;</div>
@@ -26114,11 +26119,7 @@
     </div>
   </div>    
 
-      <footer id="footer" style="position: fixed;bottom: 0px;background: #00BCD4;width: 98%;height: auto;padding: 10px;">
-        Hello Uncle, I have used service worker and here is a
-        <a href="http://myworks.cf/">file</a> displaying the browser support for the service worker.
-        <span style="transform: rotate(45deg);position: relative;right: 0px;float: right;margin-right: 20px;top: 0px;font-size: 34px;z-index: 1000;" onclick="document.getElementById('footer').style='display:none;';">+</span>
-      </footer>
+
     <!-- end of #container -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.0/list.min.js'></script>
