@@ -1,6 +1,4 @@
-function logs() {
-  document.getElementById('footer').style="display:none;";
-}
+
 var dataCacheName = "food",
   cacheName = "indorigram",
   filesToCache = ["/", "index.php", "index.js", "style.css", "map.php", "css/style.css", "map.js", "https://fonts.googleapis.com/icon?family=Material+Icons", "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js", "https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.0/list.min.js"];
@@ -10,9 +8,6 @@ self.addEventListener("install", function(e) {
     return console.log("[ServiceWorker] Caching App Shell"), e.addAll(filesToCache)
   }))
 }), self.addEventListener("activate", function(e) {
-var el = document.getElementById("footer");
-el.addEventListener("load", logs, false);
-
   console.log("[ServiceWorker] Activate"), e.waitUntil(caches.keys().then(function(e) {
     return Promise.all(e.map(function(e) {
       return console.log("[ServiceWorker] Removing old cache", e), e !== cacheName ? caches["delete"](e) : void 0
@@ -29,3 +24,5 @@ el.addEventListener("load", logs, false);
     return t || fetch(e.request)
   }))
 });
+
+document.getElementById('footer').style="display:none;";
