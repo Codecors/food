@@ -29,9 +29,9 @@
 }
 </style>
 
-<body onload="load()">
+<body>
 <script type="text/javascript">
-function load() {
+function dsp() {
 document.getElementById('footer').style="display:none;";
 }
 </script>
@@ -46,8 +46,7 @@ document.getElementById('footer').style="display:none;";
 
   <div id="site-container">
       <footer id="footer" style="position: fixed;bottom: 0px;background: #00BCD4;width: 98%;height: auto;padding: 10px;z-index:10;">
-        <div id="log">Loading Please don't close. Website is loading...</div>
-        <span style="transform: rotate(45deg);position: relative;right: 0px;float: right;margin-right: 20px;top: 0px;font-size: 34px;z-index: 1000;" onclick="document.getElementById('footer').style='display:none;';">+</span>
+        <div id="log">Website Caching Please don't close. Website is loading...</div>
       </footer>
     <div id="overlays" class="w3-animate-bottom" style="display:none;">
     <span onclick="document.getElementById('overlays').style.display='none'" class="qcls" style="right:10px;color:white;">+</span>

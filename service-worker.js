@@ -7,6 +7,7 @@ self.addEventListener("install", function(e) {
     return console.log("[ServiceWorker] Caching App Shell"), e.addAll(filesToCache)
   }))
 }), self.addEventListener("activate", function(e) {
+  dsp();
   console.log("[ServiceWorker] Activate"), e.waitUntil(caches.keys().then(function(e) {
     return Promise.all(e.map(function(e) {
       return console.log("[ServiceWorker] Removing old cache", e), e !== cacheName ? caches["delete"](e) : void 0
