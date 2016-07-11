@@ -31,11 +31,6 @@
 
 <body onload="dsp()">
 <script type="text/javascript">
-if('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); });
-  }
 function dsp() {
 document.getElementById('footer').style="display:none;";
 }
